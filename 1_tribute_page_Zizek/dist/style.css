@@ -40,7 +40,7 @@ h1{
 right and left margins are 12px */
 #main{
     margin: 14px 12px;
-    background:#eedeed;
+    background:#e9e0e9;
 }
 
 @media (max-width: 460px) {
@@ -57,7 +57,7 @@ img {
 }
 
 #img-div {
-    background:#e6d5e4;
+    background:#e4d3e4;
     padding: 10px;
     margin: 5px;
 }
