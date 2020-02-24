@@ -1,2 +1,2 @@
-This is a tribute webpage to Slavoj Zizek
+Slavoj Žižek - survey -> [DEMO](https://codepen.io/mkostyrko/full/LYVxjpZ)
 
