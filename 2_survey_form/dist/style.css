@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+/* defining colors so they can be easily used later */
+:root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-violet-alpha: rgba(25, 11, 27, 0.733);
+    --color-yellow: #d4b500;
+  }
+
+/* box-sizing property defines how the width and height of an element are calculated
+Default value:	content-box
+border-box	The width and height properties (and min/max properties) 
+includes content, padding and border */
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+
+body { font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    /* calling color defined above */
+    color: var(--color-white);
+    margin: 0.2rem;
+}
+/* The content property is used with the ::before and ::after pseudo-elements, 
+to insert generated content */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* The z-index property specifies the stack order of an element */
+    z-index: -1;
+    /* background: var(--color-darkblue); */
+    background-image: linear-gradient(
+        115deg,
+        rgba(71, 13, 54, 0.877),
+        rgba(189, 122, 21, 0.596)
+      ),
+      url("https://raw.githubusercontent.com/kostyrko/FreeCodeCamp-RWD/master/1_tribute_page_Zizek/dist/img/s_zizek_vaporwave.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+   }
+  
+p {
+    font-size: 1.125rem;
+  }
+
+h1,p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+     }
+
+/* To create a flex container, we set the value of the 
+area's container's display property to flex or inline-flex */
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+/* inherit	Inherits this property from its parent element. */
+input,button,
+select,textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button {
+  border: none;
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+  }
+
+/* defining container's width containing the whole form */
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}
+  
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+}
+
+.header {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 0.625rem;
+    margin-bottom: 1.875rem;
+  }
+  
+  .description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  }
+  
+  .clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+  }
+
+.text-center {
+    text-align: center;
+  }
+
+/* form */
+/* setting background only for the part of the container with the form */
+form {
+    background: var(--color-violet-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+/* transitions allows you to change property values smoothly, 
+over a given duration */
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: rgba(0, 0, 0, 0.76);
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* when focused/clicked */
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(132, 0, 255, 0.356);
+  }
+
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    margin-right: 0.625rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+  
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+.submit-button {
+    display: block;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 0.6rem;
+    background: var(--color-yellow);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+  }
