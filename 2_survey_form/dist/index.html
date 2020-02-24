@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey - Slavoj Žižek</title>
+</head>
+<body>
+<div class="container">
+
+    <header class="header">
+        <h1 id="title">Slavoj Žižek - survey</h1>
+        <p id="description">A survey on your knowledge of Slavoj Žižek's works</p>
+    </header>
+
+    <form id="survey-form">
+
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input 
+            type="text" 
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name" 
+            required>
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input 
+            type="email" 
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email adress" 
+            required>
+        </div>
+
+        <div class="form-group">
+            <label id="age-label" for="age">Age 
+                <span class="clue">(optional information)</span></label>
+            <input 
+            type="number" 
+            name="age"
+            id="number"
+            class="form-control"
+            placeholder="Enter your age"
+            min="0"
+            max="105">      
+        </div>
+
+        <div class="form-group"></div>
+        <p>What is your gender?</p>
+            <label for="male">
+            <input class="input-radio" type="radio" name="gender" value="male" checked>Male</label>
+            <label for="female">
+            <input class="input-radio" type="radio" name="gender" value="female">Female</label>
+            <label for="other">
+            <input class="input-radio" type="radio" name="gender" value="other">Other</label>
+        </div>
+        
+
+        <div class="form-group">
+        <p>Education background</p>
+        <select id="dropdown" name="education" class="form-control" required>
+            <option disabled selected value>Select your last or current education level</option>
+            <option value="high school">high school</option>
+            <option value="high school graduate">high school diploma</option>
+            <option value="undergraduate studies">undergraduate studies</option>
+            <option value="bachelor’s degree">bachelor’s degree</option>
+            <option value="master studies">master studies</option>
+            <option value="master’s degree">master’s degree</option>
+            <option value="doctorate studies">doctorate studies</option>
+            <option value="doctorate degree">doctorate degree</option>
+        </select>
+
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="education" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">student</option>
+                <option value="full time job - private sector">full time job - private sector</option>
+                <option value="full time job - public sector">full time job - public sector</option>
+                <option value="full time job - higher education">full time job - higher education</option>
+                <option value="unemployed">unemployed</option>
+                <option value="prefer not to say">prefer not to say</option>
+        </select>
+        </div>
+        <div class="form-group">
+            <p>Which books by Slavoj Žižek have you read?
+            <span class="clue">(Check all that apply)</span></p>
+            
+            <label>
+                <input
+                name="book" 
+                value="The Sublime Object of Ideology"
+                class="input-checkbox" 
+                type="checkbox"> 
+                The Sublime Object of Ideology
+            </label>
+
+            <label>
+                <input
+                name="book" 
+                value="Enjoy Your Symptom!"
+                class="input-checkbox" 
+                type="checkbox"> 
+                Enjoy Your Symptom!
+            </label>
+
+            <label>
+                <input
+                name="book" 
+                value="Welcome to the Desert of the Real"
+                class="input-checkbox" 
+                type="checkbox"> 
+                Welcome to the Desert of the Real
+            </label>
+
+            <label>
+                <input
+                name="book" 
+                value="The Parallax View"
+                class="input-checkbox" 
+                type="checkbox"> 
+                The Parallax View
+            </label>
+
+            <label>
+                <input
+                name="book" 
+                value="Living in the End Times"
+                class="input-checkbox" 
+                type="checkbox"> 
+                Living in the End Times
+            </label>
+
+            <label>
+                <input
+                name="book" 
+                value="In Defense of Lost Causes"
+                class="input-checkbox" 
+                type="checkbox"> 
+                In Defense of Lost Causes
+            </label>
+
+            <label>
+                <input
+                name="book" 
+                value="First As Tragedy, Then As Farce"
+                class="input-checkbox" 
+                type="checkbox"> 
+                First As Tragedy, Then As Farce
+            </label>
+            <label>
+                <input
+                name="book" 
+                value="Demanding the Impossible"
+                class="input-checkbox" 
+                type="checkbox"> 
+                Demanding the Impossible
+            </label>
+
+        </div>
+
+        <div class="form-group">
+            <p>Which movies with Slavoj Žižek have you seen?
+            <span class="clue">(Check all that apply)</span></p>
+            
+            <label>
+                <input
+                name="movie" 
+                value="The Reality of the Virtual"
+                class="input-checkbox" 
+                type="checkbox"> 
+                The Reality of the Virtual
+            </label>
+
+            <label>
+                <input
+                name="movie" 
+                value="Zizek!"
+                class="input-checkbox" 
+                type="checkbox"> 
+                Zizek!
+            </label>
+
+            <label>
+                <input
+                name="movie" 
+                value="The Pervert's Guide to Cinema"
+                class="input-checkbox" 
+                type="checkbox"> 
+                The Pervert's Guide to Cinema
+            </label>
+
+            <label>
+                <input
+                name="movie" 
+                value="The Pervert's Guide to Ideology"
+                class="input-checkbox" 
+                type="checkbox"> 
+                The Pervert's Guide to Ideology
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comment here...">
+            </textarea>
+        </div>
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+
+
+
+    </form>
+</div>
+</body>
+</html>
